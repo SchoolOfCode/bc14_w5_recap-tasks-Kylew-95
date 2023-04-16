@@ -10,7 +10,8 @@ function BlogPost({ blog }) {
       </div>
       <img src={blog.imageSrc} alt={blog.imageAlt} />
       <p id="altTag">{blog.imageAlt}</p>
-      <div className="container">
+      <div className="post-container">
+      <h3>My Post:</h3>
         <p id="content">{blog.content}</p>
       </div>
     </div>

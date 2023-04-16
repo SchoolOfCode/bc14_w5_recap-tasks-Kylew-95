@@ -35,7 +35,7 @@ function App() {
       imageAlt: "A black BMW X6 M parked on a city street",
     },
   ];
-  const Newcomments = [
+  const comments = [
     {
       id: "jFyGAKz1VsGputO1gV8xa",
       author: "Kyle Williams",
@@ -54,7 +54,7 @@ function App() {
         <BlogPost key={index} blog={blog} />
       ))}
       <ul>
-      <CommentList comments={Newcomments} />;
+        <CommentList comments={comments} />
       </ul>
     </div>
   );

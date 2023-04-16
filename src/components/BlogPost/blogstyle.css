@@ -12,6 +12,11 @@
   border-radius: 4%;
   background-color: rgba(231, 231, 231, 0.2);
   transform: scale(0.93455);
+  transition: ease-in 0.2s;
+}
+.blog:hover {
+  transform: scale(0.9);
+  transition: ease-in 0.3s;
 }
 
 .blog h2 {
@@ -30,6 +35,12 @@ img {
   width: 1000px;
   height: 500px;
   object-fit: cover;
+  transition: ease-in 0.5;
+}
+
+img:hover {
+  transition: ease-in 0.5;
+  filter: blur(5px);
 }
 
 #altTag {
@@ -43,9 +54,15 @@ img {
   margin-top: -10px;
 }
 
-.container {
+h3:hover {
+  color: #880909;
+}
+
+.post-container {
+  margin-top: -2%;
+  margin-bottom: 60px;
   padding: 10px;
-  width: 700px;
+  width: 800px;
   height: 100px;
 }
 

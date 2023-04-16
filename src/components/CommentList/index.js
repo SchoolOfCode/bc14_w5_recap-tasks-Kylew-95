@@ -1,25 +1,17 @@
 import React from "react";
 import Comment from "../Comment";
 
-const Newcomments = [
-  {
-    id: "jFyGAKz1VsGputO1gV8xa",
-    author: "Kyle Williams",
-    content: "Best CAR in the WORLD!",
-  },
-  {
-    id: "yGAKzjF1VsGputO1gV8ax",
-    author: "Chris Meah",
-    content: "Many thank yous",
-  },
-];
-
-function CommentList() {
+function CommentList({ comments }) {
   return (
     <div>
+      <h3 id="com-h3">Comments:</h3>
       <ul>
-        {Newcomments.map((author, index) => (
-          <Comment key={index} author={author} />
+        {comments.map((comment, index) => (
+          <Comment
+            key={comment.id}
+            author={comment.author}
+            content={comment.content}
+          />
         ))}
       </ul>
     </div>
