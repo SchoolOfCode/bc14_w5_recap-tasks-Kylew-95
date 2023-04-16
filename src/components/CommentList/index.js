@@ -1,5 +1,18 @@
-function CommentList() {
-  return null;
+import React from "react";
+import Comment from "../Comment";
+
+function CommentList({ comments }) {
+  return (
+    <div>
+      {comments.map((comment, index) => (
+        <Comment
+          key={index}
+          author={comment.author}
+          content={comment.content}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default CommentList;
