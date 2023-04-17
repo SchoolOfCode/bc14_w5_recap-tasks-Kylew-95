@@ -1,6 +1,7 @@
 import React from "react";
 import BlogPost from "../BlogPost";
 import CommentList from "../CommentList";
+import CommentForm from "../CommentForm";
 
 function App() {
   const blog = [
@@ -44,7 +45,12 @@ function App() {
     {
       id: "yGAKzjF1VsGputO1gV8ax",
       author: "Chris Meah",
-      content: "Many thank yous",
+      content: "Wow best website ever!😎",
+    },
+    {
+      id: "KzjF1VyGAsGpgV8axutO1",
+      author: "Eren Turkmen",
+      content: "I love the ostrich🦚",
     },
   ];
 
@@ -56,6 +62,9 @@ function App() {
       <ul>
         <CommentList comments={comments} />
       </ul>
+      <div>
+        <CommentForm />
+      </div>
     </div>
   );
 }
