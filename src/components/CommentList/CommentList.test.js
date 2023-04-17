@@ -21,7 +21,7 @@ const props = {
 
 describe("CommentList component", () => {
   beforeEach(() => {
-    render(<CommentList comments={props.comments} />);
+    render(<CommentList commsent={props.comments} />);
   });
 
   it.each(props.comments)(
